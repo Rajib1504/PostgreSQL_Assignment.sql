@@ -18,12 +18,16 @@ PostgreSQL হল একধরনের ডাটাবেস সফটওয়
 ## 4️⃣ WHERE ক্লজের কাজ কী?
 SELECT কমান্ড দিয়ে যখন আমরা ডাটা বের করি, তখন **WHERE** দিয়ে শর্ত লিখতে পারি কোন রো বের হবে। যেমন:
 
+```
 SELECT * FROM students WHERE department_id = 1;
+```
 
 5️⃣ JOIN এর কাজ কী?
 JOIN দিয়ে একাধিক টেবিলের ডাটা একসাথে আনা হয়। দুই টেবিলের মধ্যে সম্পর্ক থাকলে JOIN ব্যবহার করে দুই টেবিলের ডাটা একসাথে দেখা যায়। যেমন:
 
 
+```
 SELECT students.name, departments.name
 FROM students
 JOIN departments ON students.department_id = departments.id;
+```
